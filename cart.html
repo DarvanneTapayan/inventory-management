@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Your Shopping Cart</h1>
+            <p>Review the items in your cart before proceeding to checkout.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart-section">
+            <div class="cart-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Product 1</td>
+                            <td><input type="number" value="1" min="1"></td>
+                            <td>$20.00</td>
+                            <td>$20.00</td>
+                            <td>
+                                <a href="" class="remove-btn">Remove</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Product 2</td>
+                            <td><input type="number" value="2" min="1"></td>
+                            <td>$15.00</td>
+                            <td>$30.00</td>
+                            <td>
+                                <a href="#" class="remove-btn">Remove</a>
+                            </td>
+                        </tr>
+                        <!-- Additional products can be added here -->
+                    </tbody>
+                </table>
+                <div class="cart-summary">
+                    <p><strong>Total Amount:</strong> $50.00</p>
+                    <a href="thank_you.html" class="checkout-btn">Proceed to Checkout</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

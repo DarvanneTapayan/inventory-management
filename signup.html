@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Create Your Account</h1>
+            <p>Sign up to start using our services today.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="signup-section">
+            <div class="form-container">
+                <h2>Sign Up</h2>
+                <form action="role_selection.html" method="POST">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+
+                    <button type="submit" class="signup-btn">Sign Up</button>
+                </form>
+                <p>Already have an account? <a href="login.html">Log in here</a>.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

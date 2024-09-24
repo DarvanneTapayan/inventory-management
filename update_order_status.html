@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Order Status</title>
+    <link rel="stylesheet" href="update_order_status.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Update Order Status</h1>
+            <p>Change the status of customer orders below.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="status-section">
+            <div class="status-container">
+                <form action="view_orders.html" method="POST">
+                    <div class="form-group">
+                        <label for="order-id">Order ID:</label>
+                        <input type="text" id="order-id" name="order-id" value="1001" disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customer-name">Customer Name:</label>
+                        <input type="text" id="customer-name" name="customer-name" value="John Doe" disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="status">Order Status:</label>
+                        <select id="status" name="status" required>
+                            <option value="pending">Pending</option>
+                            <option value="confirmed">Confirmed</option>
+                            <option value="shipped">Shipped</option>
+                            <option value="delivered">Delivered</option>
+                            <option value="cancelled">Cancelled</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Update Status</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
